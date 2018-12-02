@@ -20,7 +20,7 @@ script:
   - make DESTDIR=appdir -j$(nproc) install
   - mkdir -p appdir/usr/share/applications/ ; cp -r ../desktop/*.desktop appdir/usr/share/applications/ # FIXME; https://github.com/f4exb/sdrangel/issues/260
   - mkdir -p appdir/usr/share/icons/hicolor/scaleable/apps/ ; touch appdir/usr/share/icons/hicolor/scaleable/apps/sdrangel.svg # FIXME; https://github.com/f4exb/sdrangel/issues/259
-  - sed -i -e 's|.xpm||g' appdir/usr/share/applications/sdrangel.desktop # FIXME; https://github.com/f4exb/sdrangel/issues/259
+  - sed -i -e 's|_icon.xpm||g' appdir/usr/share/applications/sdrangel.desktop # FIXME; https://github.com/f4exb/sdrangel/issues/259
   - find appdir/
   - wget -c -nv "https://github.com/probonopd/linuxdeployqt/releases/download/continuous/linuxdeployqt-continuous-x86_64.AppImage"
   - chmod a+x linuxdeployqt-continuous-x86_64.AppImage
