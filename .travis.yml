@@ -10,7 +10,7 @@ before_install:
 
 install:
   - sudo apt-get -y remove cmake
-  - sudo apt-get -y install qt59base cmake libgles2-mesa-dev librtlsdr-dev libboost-all-dev libasound2-dev pulseaudio libopencv-dev libsqlite3-dev libxml2-dev bison flex ffmpeg libavcodec-dev libavformat-dev
+  - sudo apt-get -y install qt59base cmake libgles2-mesa-dev librtlsdr-dev libboost-all-dev libasound2-dev pulseaudio libopencv-dev libsqlite3-dev libxml2-dev bison flex libavcodec-dev libavformat-dev
   - source /opt/qt*/bin/qt*-env.sh
 
 script:
