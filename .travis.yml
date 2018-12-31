@@ -13,7 +13,7 @@ install:
   - sudo apt-get -y remove cmake
   - sudo apt-get -y install cpp-8 qt59base qt59multimedia qt59tools cmake libgles2-mesa-dev librtlsdr-dev libboost-all-dev libasound2-dev pulseaudio libopencv-dev libsqlite3-dev libxml2-dev bison flex libavcodec-dev libavformat-dev
   - source /opt/qt*/bin/qt*-env.sh
-  - export CXX=cpp-8
+  - export CXX=c++-8
 
 script:
   - mkdir build && cd build 
